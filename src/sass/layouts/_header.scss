@@ -1,0 +1,22 @@
+@use '../abstracts/breakpoints';
+
+@media (min-width: breakpoints.$breakpoint-sm) {
+  nav > .icon {
+    display: none;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    padding: 3.8rem 0;
+    gap: 4.5rem;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+
+  .icon {
+    justify-content: flex-end;
+  }
+}

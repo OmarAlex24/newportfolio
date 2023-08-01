@@ -1,0 +1,22 @@
+@use '../abstracts/colors';
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  background-color: colors.$bg-color-dark;
+}
+.nav-wrapper {
+  display: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

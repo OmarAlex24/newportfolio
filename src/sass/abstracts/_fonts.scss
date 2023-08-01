@@ -1,0 +1,9 @@
+$main-title: clamp(2rem, 1.3333rem + 2.963vw, 4rem);
+$title: clamp(2rem, 1.5rem + 2.2222vw, 3.5rem);
+$subtitle: clamp(1.5rem, 1.25rem + 1.1111vw, 2.25rem);
+$p: clamp(0.875rem, 0.5833rem + 1.2963vw, 1.75rem);
+$text-button: clamp(0.875rem, 0.75rem + 0.5556vw, 1.25rem);
+
+$icon-l: clamp(1.56rem, 0.18rem + 6.1333vw, 5.7rem);
+$icon-m: clamp(2.125rem, 1.8333rem + 1.2963vw, 3rem);
+$icon-s: clamp(0.875rem, 0.6667rem + 0.9259vw, 1.5rem);
