@@ -1,22 +1,28 @@
 @use '../abstracts/breakpoints';
 
-@media (min-width: breakpoints.$breakpoint-sm) {
-  nav > .icon {
-    display: none;
-  }
+// Mobile first
+.nav {
+  display: flex;
+  justify-content: flex-end;
 
-  .nav-wrapper {
-    display: flex;
-    padding: 3.8rem 0;
-    gap: 4.5rem;
+  margin: 1.25rem;
+
+  &__wrapper {
+    display: none;
   }
 }
 
-nav {
-  display: flex;
-  justify-content: center;
+@media (min-width: breakpoints.$breakpoint-sm) {
+  .nav {
+    justify-content: center;
+    &__icon {
+      display: none;
+    }
 
-  .icon {
-    justify-content: flex-end;
+    &__wrapper {
+      display: flex;
+      padding: 1.5rem 0;
+      gap: 4.5rem;
+    }
   }
 }
