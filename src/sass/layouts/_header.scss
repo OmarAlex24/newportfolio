@@ -4,15 +4,15 @@
 .nav {
   display: flex;
   justify-content: flex-end;
-
-  margin: 1.25rem;
+  min-height: 5svh;
+  padding: 1.25rem;
 
   &__wrapper {
     display: none;
   }
 }
 
-@media (min-width: breakpoints.$breakpoint-sm) {
+@media (min-width: breakpoints.$breakpoint-md) {
   .nav {
     justify-content: center;
     &__icon {

@@ -1,0 +1,6 @@
+@mixin displayFlex($jcc, $aic, $direction: row) {
+  display: flex;
+  justify-content: $jcc;
+  align-items: $aic;
+  flex-direction: $direction;
+}

@@ -1,0 +1,7 @@
+@mixin cvButton($padding) {
+  padding: $padding;
+  gap: 0.625rem;
+  border: none;
+  border-radius: 3.125rem;
+  background: #daff40;
+}
