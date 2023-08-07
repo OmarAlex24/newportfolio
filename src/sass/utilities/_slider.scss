@@ -1,0 +1,28 @@
+.slider {
+  display: flex;
+  align-self: center;
+  width: 98vw;
+  overflow: hidden;
+
+  $animation-duration: 20s;
+
+  &__track {
+    animation: scroll $animation-duration linear infinite;
+
+    justify-content: center;
+    display: flex;
+
+    h2 {
+      padding: 0 1rem;
+    }
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100%));
+  }
+}

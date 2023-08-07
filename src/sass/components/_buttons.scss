@@ -1,7 +1,42 @@
+@use '../abstracts/colors';
+@use '../abstracts/fonts';
+@use '../abstracts/mixins';
+
 @mixin cvButton($padding) {
   padding: $padding;
   gap: 0.625rem;
   border: none;
   border-radius: 3.125rem;
   background: #daff40;
+}
+
+@mixin projectButton() {
+  max-width: 500px;
+  border-radius: 2.1875rem;
+  background: colors.$blur-color;
+  box-shadow: colors.$blur-purple;
+
+  img {
+    width: 100%;
+    border-radius: 2.1875rem;
+    box-shadow: colors.$blur-black;
+  }
+
+  &__content {
+    gap: 2rem;
+    padding: 0rem 1.875rem;
+    @include mixins.displayFlex(space-between, center, row);
+
+    p {
+      font-size: fonts.$title-card;
+      font-weight: 600;
+
+      padding: 0.5rem 0;
+    }
+
+    &__icons {
+      display: flex;
+      gap: 1rem;
+    }
+  }
 }

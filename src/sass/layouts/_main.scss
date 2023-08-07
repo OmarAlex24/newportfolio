@@ -27,12 +27,12 @@
 // <------------- Pagina ------------->
 
 .main {
-  height: 90svh;
   @include mixins.displayFlex(center, center, column);
 
   &__wrapper {
     @include mixins.displayFlex(center, center, column);
 
+    height: 70svh;
     width: min(900px, 90%);
 
     .foto-perfil {

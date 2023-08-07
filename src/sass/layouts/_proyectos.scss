@@ -1,0 +1,36 @@
+@use '../components/buttons';
+@use '../abstracts/mixins';
+
+.proyectos {
+  .carousel {
+    @include mixins.displayFlex(center, center, column);
+    gap: clamp(2rem, -0.5816rem + 8.9796vw, 7.5rem);
+
+    &__group_cards {
+      display: flex;
+      gap: 4.7rem;
+
+      .card {
+        @include buttons.projectButton;
+      }
+    }
+
+    .slider {
+      display: flex;
+      gap: 0.6rem;
+
+      .active {
+        width: clamp(2.25rem, 1.5459rem + 2.449vw, 3.75rem);
+        height: clamp(1rem, 0.7653rem + 0.8163vw, 1.5rem);
+        border-radius: 1.5rem;
+        background: #d9d9d9;
+      }
+      .inactive {
+        width: clamp(1rem, 0.7653rem + 0.8163vw, 1.5rem);
+        height: clamp(1rem, 0.7653rem + 0.8163vw, 1.5rem);
+        border-radius: 50%;
+        background: rgba(217, 217, 217, 0.2);
+      }
+    }
+  }
+}
