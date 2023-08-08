@@ -1,78 +1,74 @@
-@use '../abstracts/fonts';
-@use '../abstracts/colors';
+@use '../abstracts/fonts' as *;
+@use '../abstracts/colors' as *;
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&display=swap');
 
 html {
   font-family: 'Syne', sans-serif;
-  color: colors.$p-color;
+  color: $p-color;
 }
 
 h1 {
-  font-size: fonts.$main-title;
+  font-size: $main-title;
   font-weight: 500;
 
   .subtitulo {
-    font-size: fonts.$subtitle;
+    font-size: $subtitle;
     font-weight: 400;
   }
   .accent {
-    color: colors.$accent-color;
+    color: $accent-color;
   }
 }
 
 h2 {
-  font-size: fonts.$title;
+  font-size: $title;
   font-weight: 700;
-  color: colors.$accent-color;
+  color: $accent-color;
   text-transform: capitalize;
-  // text-shadow: 0px 0.9131946563720703px 6.862796306610107px
-  //     rgba(218, 255, 64, 0.07),
-  //   0px 2.194533586502075px 16.492252349853516px rgba(218, 255, 64, 0.11),
-  //   0px 4.1321120262146px 31.053447723388672px rgba(218, 255, 64, 0.13),
-  //   0px 7.3709821701049805px 55.394046783447266px rgba(218, 255, 64, 0.15),
-  //   0px 13.786611557006836px 103.60847473144531px rgba(218, 255, 64, 0.19),
-  //   0px 33px 248px rgba(218, 255, 64, 0.26);
 }
 h4 {
-  font-size: fonts.$subtitle;
+  font-size: $subtitle;
   font-weight: 700;
 }
 p {
-  font-size: fonts.$p;
+  font-size: $p;
   font-weight: 400;
 }
 a {
   text-decoration: none;
-  color: colors.$p-color;
+  color: $p-color;
   font-size: 1.5rem;
 }
 .nav {
   a {
-    font-size: fonts.$text-button;
+    font-size: $text-button;
     font-weight: 400;
   }
 }
 .main {
   button {
-    color: colors.$p-color;
+    color: $p-color;
   }
   .text-button {
-    font-size: fonts.$text-button;
+    font-size: $text-button;
   }
 }
 
 // Iconos fontawesome
 i {
-  font-size: fonts.$icon-m;
+  font-size: $icon-m;
 }
 button i {
-  font-size: fonts.$icon-s;
+  font-size: $icon-s;
 }
 nav > i {
   font-size: 3rem;
 }
 .tecnologies-wrapper {
   i {
-    font-size: fonts.$icon-l;
+    font-size: $icon-l;
   }
+}
+.subrayado {
+  color: $accent-color;
 }
